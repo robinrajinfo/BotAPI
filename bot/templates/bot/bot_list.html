@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bot List</title>
+</head>
+<body>
+    <h1>All Bots</h1>
+    <ul>
+        {% for bot in bots %}
+            <li>{{ bot.name }} - {{ bot.type }} - 
+                {% if bot.status %}Active{% else %}Inactive{% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
